@@ -5,7 +5,7 @@ class Vote
     public static function vote(\React\Http\Request $request, \React\Http\Response $response)
     {
         try{
-            $s = \NeoHakushu\DB::getVotePreparedStatement();
+            $s = \NeoHakushu\DB::$prepared_cache;
             $s->bindValue('vote_id', 1, \PDO::PARAM_INT);
             $s->execute();
         }catch(\Exception $e){
