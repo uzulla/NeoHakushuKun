@@ -6,6 +6,7 @@ define('TEMPLATES_DIR', __DIR__."/templates");
 define('TEMPLATES_CACHE', __DIR__."/twig_cache");
 
 \NeoHakushu\DB::getVotePreparedStatement();
+\NeoHakushu\View::getTwig();
 
 $app = function ($request, $response) {
     \NeoHakushu\Route::dispatch($request, $response);
