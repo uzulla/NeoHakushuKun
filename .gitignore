@@ -1,0 +1,5 @@
+/vendor/
+/twig_cache/**/*
+composer.phar
+sqlite.db
+.php-version

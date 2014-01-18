@@ -1,0 +1,9 @@
+{
+    "require": {
+        "react/http": "0.3.*",
+        "twig/twig": "*"
+    },
+    "autoload": {
+        "psr-0": {"": "lib/"}
+    }
+}
